@@ -16,7 +16,7 @@ class ArraySorter:
             self.items[current_pos], self.items[smallest_idx] = self.items[smallest_idx], self.items[current_pos]
         return self.items
         
-data_set = [45, 23, 67, 89, 12, 78, 34, 56]
+data_set = [9, 7, 8, 10, 21, 32, 28, 99, 109, 108]
 print("Before sorting:", data_set)
 
 sorter_instance = ArraySorter(data_set)
