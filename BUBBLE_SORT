@@ -1,0 +1,20 @@
+class ArrayBubbleSorter:
+    def __init__(self, items):
+        self.items = items
+
+    def perform_sorting(self):
+        count = len(self.items)
+        for pass_num in range(count - 1):
+            did_swap = False
+            for pos in range(count - pass_num - 1):
+                if self.items[pos] > self.items[pos + 1]:
+                    self.items[pos], self.items[pos + 1] = self.items[pos + 1], self.items[pos]
+                    did_swap = True
+            if not did_swap:
+                break
+        return self.items
+initial_data = [9, 7, 8, 10, 21, 32, 28, 99, 109, 108]
+print("Before sorting:", initial_data)
+sorter = ArrayBubbleSorter(initial_data)
+sorted_data = sorter.perform_sorting()
+print("After sorting:", sorted_data)
