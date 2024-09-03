@@ -1,0 +1,24 @@
+class ArraySorter:
+    def __init__(self, items):
+        self.items = items
+
+    def locate_smallest(self, start_index):
+        min_index = start_index
+        for idx in range(start_index + 1, len(self.items)):
+            if self.items[idx] < self.items[min_index]:
+                min_index = idx
+        return min_index
+
+    def perform_sort(self):
+        length = len(self.items)
+        for current_pos in range(length):
+            smallest_idx = self.locate_smallest(current_pos)
+            self.items[current_pos], self.items[smallest_idx] = self.items[smallest_idx], self.items[current_pos]
+        return self.items
+        
+data_set = [45, 23, 67, 89, 12, 78, 34, 56]
+print("Before sorting:", data_set)
+
+sorter_instance = ArraySorter(data_set)
+sorted_data = sorter_instance.perform_sort()
+print("After sorting:", sorted_data)
