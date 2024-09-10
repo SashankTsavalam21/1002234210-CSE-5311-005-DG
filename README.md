@@ -1,5 +1,6 @@
 # 1002234210-CSE-5311-005-DG
-HANDS-ON-2
+includes every hands-on assignments respectively
+
 CSE-5311-005-DG-ASSIGNMENT SUBMISSIO
 
 UTA ID : 1002234210
