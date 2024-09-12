@@ -17,3 +17,14 @@ for _ in range(a):
     mergelist.extend(userlist)
 sortedlist = sort_list(mergelist)
 print("Merged & sorted list:", sortedlist)
+
+
+'''PS C:\Users\sasha\OneDrive\Documents\GitHub\1002234210-CSE-5311-005-DG>
+PS C:\Users\sasha\OneDrive\Documents\GitHub\1002234210-CSE-5311-005-DG> & C:/Users/sasha/AppData/Local/Programs/Python/Python310/python.exe "c:/Users/sasha/OneDrive/Documents/GitHub/1002234210-CSE-5311-005-DG/hands-on-4 problem-1.py"
+no of lists? 3
+no of elements in each list? 4
+Enter sorted list: 1 3 5 7
+Enter sorted list: 2 4 6 8
+Enter sorted list: 0 9 10 11
+Merged & sorted list: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+PS C:\Users\sasha\OneDrive\Documents\GitHub\1002234210-CSE-5311-005-DG>''
