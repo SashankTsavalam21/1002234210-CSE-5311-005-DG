@@ -67,3 +67,20 @@ if __name__ == "__main__":
     root = min_heap.pop_root()
     print("Removed node from heap:", root)
     print("Heap array: ", min_heap.heaparray)
+
+
+
+
+
+
+OUTPUT :
+
+''Enter an array:
+10 4 9 1 7 5 16
+Initial Heap array:  [1, 4, 5, 10, 7, 9, 16]
+Heap array:  [1, 2, 5, 4, 7, 9, 16, 10]
+Removed node from heap: 1
+Heap array:  [2, 4, 5, 10, 7, 9, 16]
+Removed node from heap: 2
+Heap array:  [4, 7, 5, 10, 16, 9]
+PS C:\Users\sasha\OneDrive\Documents\GitHub\1002234210-CSE-5311-005-DG>'''
